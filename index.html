@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee management system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="operation-section">
+        <div class="operation-section__button" id="view-button">View</div>
+        <div class="operation-section__button">Add</div>
+        <div class="operation-section__button">Search</div>
+    </section>
+    <section class="display-section">
+        <table class="display-section__employee-table">
+            <caption>employee list</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>salary</th>
+                    <th>joining date</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <form action="" class="display-section__add-employee_form"><div>
+                <label for="id">Enter employee ID</label>
+                <input type="text" name="emp_id" id="name" placeholder="e.g 101">
+            </div>
+
+            <div>
+                <label for="name">Enter employee name</label>
+                <input type="text" name="emp_name" id="name" placeholder="e.g ram">
+            </div>
+            <div>
+                <label for="Department">select employee Department</label>
+                <select name="emp_department" id="Department">
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Sales">Sales</option>
+                </select>
+            </div>
+            <div>
+                 <label for="salary">Enter employee salary</label>
+                 <input type="text" name="emp_salary" id="salary" placeholder="e.g 25000">
+            </div>
+            <div>
+                <label for="date">Enter employee joining date</label>
+                <input type="date" name="emp_joining_date" id="date" placeholder="e.g 25/04/2025">
+            </div>
+            <div>
+                 <button type="submit">Add Employee</button>
+            </div>
+        </form>
+
+        <div class="display-section__search-employee">
+            <input type="text" placeholder="Enter Employee Name">
+            <button>search</button>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
